@@ -39,3 +39,10 @@ img {
     border-radius: 10px;
     margin-top: 20px;
 }
+
+/* বাটনটি যাতে স্মুথলি সরে যায় */
+#jump-btn {
+    position: relative; 
+    transition: all 0.2s ease;
+    z-index: 100;
+}
