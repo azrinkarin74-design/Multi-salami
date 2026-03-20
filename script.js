@@ -23,3 +23,15 @@ function showSalami(amount) {
         img.src = "funny.jpg"; // তোমার আগের ফানি ছবিটা
     }
 }
+function moveButton() {
+    const btn = document.getElementById('jump-btn');
+    
+    // স্ক্রিনের চওড়া এবং উচ্চতা মেপে নেওয়া
+    const x = Math.random() * (window.innerWidth - btn.clientWidth - 50);
+    const y = Math.random() * (window.innerHeight - btn.clientHeight - 50);
+    
+    // বাটনটিকে নতুন পজিশনে পাঠিয়ে দেওয়া
+    btn.style.position = 'fixed';
+    btn.style.left = x + 'px';
+    btn.style.top = y + 'px';
+}
